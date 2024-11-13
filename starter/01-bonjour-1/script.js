@@ -39,13 +39,15 @@ Quand l'événement "click" se produit sur l'élément "bouton" de l'interface, 
 MÉTHODE :
 1. déclarer une fonction direbonjour
 2. récupérer l'élément "bouton" qui doit réagir
-3. ajouter à ce bouton un gestionnaire d'événement avec la méthode  addEventListener() qui va écouter le clic (événement click) et qui, au clic sur le bouton,  déclenchera l'appel de la fonction direbonjour.
+3. ajouter à ce bouton un gestionnaire d'événement avec la méthode  addEventListener() qui va écouter le clic (événement click) et qui, au clic sur le bouton, déclenchera l'appel de la fonction direbonjour.
 */
-
-
 
 
 // Autre écriture : avec une fonction anonyme
 
 
 // Écriture ES6
+
+document.getElementById('hello').addEventListener('click', (evt)=>{console.log('Hi !')});
+
+
