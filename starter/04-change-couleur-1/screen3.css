@@ -1,3 +1,7 @@
+:root {
+	background-color: --main-color;
+}
+
 .red{
 	background-color: #B61E08;
 }

@@ -11,14 +11,27 @@
    * 3°) avec une arrow fonction et une expression conditionnelle
 */
 
+/*
 
-// Autre écriture
+function bonjour() {
+    const prenom = document.getElementById('prenom').value;
+    if (prenom) {
+        alert(`Bonjour, ${prenom} !`);
+    } else {
+        alert("Bonjour, toi ! Tu ne veux pas me dire comment tu t'appelles ?");
+    }
+}
 
+document.getElementById('hello').addEventListener('click', e => {
+    bonjour()
+})
+*/
 
-
-
-// Plus court : écriture ES6 avec expression conditionnelle
-
-
-
-
+document.getElementById('hello').addEventListener('click', e => {
+    const prenom = document.getElementById('prenom').value;
+    if (prenom) {
+        alert(`Bonjour, ${prenom} !`);
+    } else {
+        alert("Bonjour, toi ! Tu ne veux pas me dire comment tu t'appelles ?");
+    }
+})

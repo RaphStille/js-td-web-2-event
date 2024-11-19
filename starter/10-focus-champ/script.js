@@ -10,6 +10,10 @@ Au focus sur le champ, vide-le et change sa couleur de fond. Lorsqu'on clique en
 
 // Un seul champ
 
+const field = document.getElementById('prenom');
+field.addEventListener('focus', e => {
+    e.currentTarget.backgroundColor = "red";
+})
 
 // Deux champs
 

@@ -25,9 +25,10 @@ La méthode classique est de créer une variable temporaire, comme ceci :
 	console.log(`a vaut ${a} et b vaut ${b}`);
 */
 
-
-
-// version de base
-
-
-// BONUS : switch entre les deux images
+document.querySelector('img').addEventListener('click', function(e){
+    [
+        e.currentTarget.src, e.currentTarget.dataset.hover
+    ]=[
+        e.currentTarget.dataset.hover, e.currentTarget.src
+    ]
+})
